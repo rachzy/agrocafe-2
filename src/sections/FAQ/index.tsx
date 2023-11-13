@@ -1,8 +1,8 @@
 
 import "./FAQ.css";
 
-import Titulo from "../../components/Titulo";
 import Pergunta, { IPergunta } from "../../components/Pergunta/index.js";
+import Title from "../../components/Title/index.js";
 
 const FAQ = () => {
   const perguntas: IPergunta[] = [
@@ -76,7 +76,7 @@ const FAQ = () => {
   }
   return (
     <section className="faq" id="faq">
-      <Titulo>Perguntas e respostas frequentes</Titulo>
+      <Title>Perguntas e respostas frequentes</Title>
       <div className="perguntas-wrapper">{renderPerguntas()}</div>
     </section>
   );
