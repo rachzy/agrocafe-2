@@ -1,33 +1,154 @@
 section.expertise-section {
-  margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
 }
 
-section.expertise-section div.expertise-passos-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+div.containers-row {
+    display: flex;
 
-  flex-grow: 1;
-
-  justify-content: space-between;
-
-  margin-block: 5vh;
-  row-gap: 8vh;
+    width: 100vw;
+    height: 60vh;
 }
 
-section.expertise-section div.expertise-passos-wrapper.mobile {
-  display: none;
+div.containers-row div {
+    display: flex;
+    flex: 1;
+
+    max-width: 50vw;
 }
 
 @media screen and (max-width: 768px) {
-  section.expertise-section {
-    width: 90%;
-  }
-  section.expertise-section div.expertise-passos-wrapper {
-    flex-direction: column;
-    display: none;
-  }
+    div.containers-row {
+        flex-direction: column;
+        height: fit-content;
+    }
 
-  section.expertise-section div.expertise-passos-wrapper.mobile {
+    div.containers-row div {
+        max-width: 100vw;
+    }
+}
+
+/* DIV.TITLE */
+
+div.containers-row div.title {
     display: flex;
-  }
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--azulmain);
+
+    flex: 1;
+}
+
+div.containers-row div.title p {
+    color: var(--azulmain);
+    margin-top: 5vh;
+    margin-inline: 12vw 1vw;
+    font-size: 3.8vmin;
+}
+
+div.containers-row div.title h2 {
+    font-family: "Avenir Next Bold", sans-serif;
+    font-size: 3.3vmax;
+    width: 60%;
+    margin-inline: 4vw 0vw;
+}
+
+div.containers-row div.title.inverse {
+    background-color: var(--cinza);
+}
+
+div.containers-row div.title.inverse h2 {
+    margin-left: 12vw;
+    color: var(--azulmain);
+    max-width: fit-content;
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    div.containers-row div.title {
+        padding: 6vh;
+    }
+
+    div.containers-row div.title p {
+        margin-inline: 0;
+        text-align: center;
+    }
+
+    div.containers-row div.title h2 {
+        width: 100%;
+        margin-inline: 0;
+        text-align: center;
+        font-size: 5vmax;
+    }
+
+    div.containers-row div.title.inverse h2 {
+        margin: 0;
+        font-size: 4.5vmax;
+    }
+
+    div.containers-row div.title.inverse p {
+        font-size: 3vmax;
+    }
+}
+
+/* DIV.BLOCKS */
+
+div.blocks {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+div.block {
+    display: flex;
+
+    align-items: center;
+    padding-left: 2vw;
+
+    flex: 1;
+}
+
+div.block h2 {
+    font-family: "Avenir Next Bold", sans-serif;
+    font-size: 6vmin;
+    color: inherit;
+}
+
+@media screen and (max-width: 768px) {
+    div.block {
+        justify-content: center;
+        padding-left: 0;
+    }
+    div.block h2 {
+        font-size: 8vmin;
+        text-align: center;
+        padding: 3vh;
+    }
+}
+
+div.block.blue {
+    background-color: var(--azulpalavra);
+}
+
+div.block.darkgreen {
+    background-color: var(--verdemusgo);
+}
+
+div.block.green {
+    background-color: var(--verdeclaro);
+    color: var(--azulmain);
+}
+
+div.block.brown {
+    background-color: var(--marrom);
+}
+
+div.block.white {
+    color: var(--azulmain);
 }

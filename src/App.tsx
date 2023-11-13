@@ -34,6 +34,7 @@ const App = () => {
           segmentos da agricultura: consultorias, produtos, irrigação,
           assistências e pulverização, via drone.
       </Aspas>
+      <Expertise />
       <ScrollBanner banner={Banner1} slogan={Slogan1} />
       <Projetos />
       <FAQ />
