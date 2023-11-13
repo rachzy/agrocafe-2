@@ -1,0 +1,40 @@
+div.box {
+    padding: 4vh 3vh;
+    border-radius: 3vh;
+
+    min-width: fit-content;
+    
+    color: white;
+
+    margin: 3vh;
+
+    box-shadow: 2vh 1vh 8vh rgba(0, 0, 0, 0.452);
+}
+
+div.box h3 {
+    font-family: "Avenir Next Bold", sans-serif;
+    text-transform: uppercase;
+}
+
+div.box h3,p {
+    color: inherit;
+}
+
+div.box.blue {
+    background-color: var(--azulmain);
+}
+
+div.box.yellow {
+    background-color: var(--verdeclaro);
+    color: var(--azulmain);
+}
+
+div.box.green {
+    background-color: var(--verdemusgo);
+    max-width: 100%;
+}
+
+div.box.green ul {
+    list-style: disc;
+    margin-left: 3vh;
+}

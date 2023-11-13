@@ -1,6 +1,7 @@
 import "./Descricao.css";
 
 import Gotinhas from "../../assets/imagens/demais-imagens/gotinhas.png";
+import Background from "../../assets/background/curvas-de-nivel.png";
 
 import CulturaCafe from "../../assets/imagens/culturas/icone-cafe.png";
 import CulturaSoja from "../../assets/imagens/culturas/icone-soja.png";
@@ -11,6 +12,7 @@ import CulturaFeijao from "../../assets/imagens/culturas/icone-feijao.png";
 import CulturaHortifruti from "../../assets/imagens/culturas/icone-hortifruti.png";
 import CulturaAlgodao from "../../assets/imagens/culturas/icone-algodao.png";
 import CulturaBox from "../../components/CulturaBox";
+import Box from "../../components/Box";
 
 export interface ICultura {
   icone: string;
@@ -65,44 +67,71 @@ const Descricao = () => {
   }
   return (
     <section className="desc-section" id="sobre">
-      <div className="main-content-wrapper verde background">
+      <div
+        className="main-content-wrapper"
+        style={{ backgroundImage: `url(${Background})` }}
+      >
         <div className="content">
           <div className="content-wrapper">
-            <h1>
-              Somos a AgroCafé, uma empresa que atua no agronegócio com mais de
-              15 anos de mercado.
-            </h1>
-
-            <img src={Gotinhas} alt="gotinhas agrocafe" />
+            <div className="box-container">
+              <Box title="Missão" className="blue">
+                <p>
+                  Ser reconhecida como parceira na geração de valor no
+                  agronegócio, com excelência e sustentabilidade.
+                </p>
+              </Box>
+              <Box title="Visão" className="yellow">
+                <p>
+                  Liderar a comercialização de insumos, serviços e tecnologia de
+                  irrigação para a produção de alimentos, impactando,
+                  positivamente, as gerações futuras.
+                </p>
+              </Box>
+            </div>
+            <div className="box-container">
+              <Box title="Valores" className="green">
+                <ul>
+                  <li>
+                    <p>Ética;</p>
+                  </li>
+                  <li>
+                    <p>Respeito;</p>
+                  </li>
+                  <li>
+                    <p>Credibilidade;</p>
+                  </li>
+                  <li>
+                    <p>Lealdade;</p>
+                  </li>
+                  <li>
+                    <p>Excelência;</p>
+                  </li>
+                  <li>
+                    <p>Inovação;</p>
+                  </li>
+                  <li>
+                    <p>Sustentabilidade.</p>
+                  </li>
+                </ul>
+              </Box>
+            </div>
           </div>
           <div className="content-wrapper justify">
+            <h1>Somos a AgroCafé!</h1>
             <p>
-              Oferecemos inovadores sistemas de irrigação, sem a necessidade de
-              expandir a sua propriedade.
+              Representamos o trabalho pioneiro que trouxe novos caminhos e
+              prosperidade para Monte Carmelo e região, em Minas Gerais.
             </p>
 
             <p>
-              Assim, você pode atingir altas produtividades, aumentar a
-              qualidade do seu cultivo e ainda reduzir, significativamente, o
-              uso de insumos e de mão de obra.
-            </p>
-            <p>
-              Uma de nossas unidades está, estrategicamente, localizada em
-              Patrocínio/MG. O município é o maior produtor de café do Brasil.
-              Essa unidade é revendedora autorizada da Netafim, empresa
-              referência internacional em irrigação.
-            </p>
-            <p>
-              Além da cultura do café, atendemos também lavouras brancas e
-              pastagens.
+              Desenvolvemos soluções inteligentes para o campo e o agronegócio,
+              inovações tecnológicas, comercialização de insumos, fertilizantes,
+              defensivos, mudas de café, além de outros grãos e técnicas de
+              irrigação, que garantem a produtividade com qualidade e
+              sustentabilidade.
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="culturas-wrapper marrom background">
-        <p>Culturas atendidas:</p>
-        <div className="culturas-container">{renderCulturas()}</div>
       </div>
     </section>
   );
