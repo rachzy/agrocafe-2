@@ -125,6 +125,7 @@ header .mobile-menu nav.options li:hover > ul.sub-options {
   header {
     position: fixed;
     z-index: 999;
+    top: 0;
   }
 
   header div.default {

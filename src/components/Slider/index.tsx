@@ -27,7 +27,7 @@ const Slider: React.FC<IProps> = ({ images, floatingDots }) => {
       return (
         <div
           key={image}
-          className={`dot ${index === currentSlide && "verde background"}`}
+          className={`dot ${index === currentSlide && "active"}`}
         />
       );
     });
@@ -46,6 +46,7 @@ const Slider: React.FC<IProps> = ({ images, floatingDots }) => {
     <>
       <div className="slider">
         {floatingDots && <div className="dots float">{renderDots()}</div>}
+        <h2><b>Inovação</b> e <b>tecnologia</b> para você, agricultor!</h2>
         <div className="slides">{renderImages()}</div>
       </div>
       {!floatingDots && <div className="dots">{renderDots()}</div>}

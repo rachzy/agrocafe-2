@@ -7,11 +7,13 @@ div.slider {
   align-items: center;
 
   width: 100vw;
+  margin-top: 11vh;
 }
 
 @media screen and (min-width: 768px) {
   div.slider {
     height: 100vh;
+    margin-top: 0;
   }
 }
 
@@ -41,6 +43,19 @@ div.slider img.main-title {
   opacity: 100%;
 
   z-index: 999;
+}
+
+div.slider b {
+  font-family: "Avenir Next Bold", sans-serif;
+}
+
+div.slider h2 {
+  font-family: "Avenir Next Regular", sans-serif;
+  font-weight: 100;
+  position: absolute;
+  z-index: 99;
+  font-size: 7vmin;
+  text-align: center;
 }
 
 /* SLIDE */
@@ -150,14 +165,19 @@ div.dots.float {
 }
 
 div.dots div.dot {
-  width: 1vh;
-  height: 1vh;
+  width: 1.1vh;
+  height: 1.1vh;
 
-  margin-inline: 0.5vh;
+  margin-inline: 1vh;
 
+  border: 0.2vh solid white;
   background-color: white;
 
   border-radius: 50%;
+}
+
+div.dots div.dot.active {
+  background-color: var(--azulmain);
 }
 
 @media screen and (max-width: 520px) {
