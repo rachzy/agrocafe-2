@@ -28,18 +28,18 @@
   span {
     display: block;
     position: absolute;
-    top: 3.5vh;
+    top: 5vh;
     left: 0;
     right: 0;
     height: 0.4vh;
-    background: #698434;
+    background: white;
     &:before, &:after {
       position: absolute;
       display: block;
       left: 0;
       width: 100%;
       height: 0.4vh;
-      background-color: #698434;
+      background-color: white;
       content: "";
     }
     &:before {

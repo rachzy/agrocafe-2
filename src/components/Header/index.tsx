@@ -56,9 +56,6 @@ const Header = () => {
         <DefaultSection options={options} />
         <MobileSection options={options} />
       </header>
-      <div className="fake-header">
-        <img src={LogoMobile} alt="logo agrocafe" />
-      </div>
     </>
   );
 };

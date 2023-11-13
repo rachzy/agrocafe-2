@@ -61,7 +61,7 @@ header .mobile-menu nav.options ul.options-list {
 }
 
 header .mobile-menu a {
-  font-family: "Dincon Bold", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
   font-size: 2.5vh;
   width: 0;
@@ -89,7 +89,7 @@ header .mobile-menu nav.options li {
   width: 80%;
   text-align: center;
 
-  background: white;
+  background: var(--verdemusgo);
   padding: 1.5vh 1vh;
 
   border-radius: 1vh;
@@ -124,6 +124,7 @@ header .mobile-menu nav.options li:hover > ul.sub-options {
   /* HEADER */
   header {
     position: fixed;
+    z-index: 999;
   }
 
   header div.default {
@@ -133,6 +134,11 @@ header .mobile-menu nav.options li:hover > ul.sub-options {
   header div.mobile {
     display: flex;
     justify-content: flex-end;
+
+    position: absolute;
+    right: 0;
+
+    width: 100vw;
   }
 
   /* FAKE-HEADER */

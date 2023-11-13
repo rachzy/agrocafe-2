@@ -5,10 +5,9 @@ import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 
-import Slide1 from "./assets/imagens/sliders/slider1.jpg";
-import Slide2 from "./assets/imagens/sliders/slider2.jpg";
-import Slide3 from "./assets/imagens/sliders/slider3.jpg";
-import Slide4 from "./assets/imagens/sliders/slider4.jpg";
+import Slide1 from "./assets/sliders/imagem1.jpg";
+import Slide2 from "./assets/sliders/imagem2.jpg";
+import Slide3 from "./assets/sliders/imagem3.jpg";
 import Expertise from "./sections/Expertise";
 import ScrollBanner from "./sections/ScrollBanner";
 
@@ -20,7 +19,7 @@ import Slogan2 from "./assets/imagens/imagens-scroll/texto2.png";
 import Projetos from "./sections/Projetos";
 
 const App = () => {
-  const slides = [Slide1, Slide2, Slide3, Slide4];
+  const slides = [Slide1, Slide2, Slide3];
 
   return (
     <main>

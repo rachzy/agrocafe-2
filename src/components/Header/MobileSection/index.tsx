@@ -50,8 +50,8 @@ const MobileSection: React.FC<IPropsSections> = ({ options }) => {
         onClick={handleHamburguerClick}
       />
       <div className="mobile-background" ref={menuRef}>
-        <div className="mobile-menu marrom background">
-          <img src={Logo} onClick={handleOptionClick} alt="logo rede cabral" />
+        <div className="mobile-menu">
+          <img src={Logo} onClick={handleOptionClick} alt="logo agrocafe" />
           <nav className="options">
             <ul className="options-list">{renderOptions()}</ul>
           </nav>
