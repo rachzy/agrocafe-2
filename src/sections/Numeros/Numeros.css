@@ -1,0 +1,55 @@
+section.numeros-section {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--verdeclaro);
+    width: 100vw;
+
+    padding-block: 5vh;
+}
+
+section.numeros-section div {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    width: 80vw;
+}
+
+div.info {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    color: var(--azulmain);
+    flex: 1;
+
+    margin-block: 5vh;
+
+}
+
+div.info img {
+    width: 50%;
+}
+
+div.info h1 {
+    font-family: "Avenir Next Bold", sans-serif;
+    font-size: 8vmin;
+    color: inherit;
+}
+
+div.info p {
+    text-align: center;
+    width: 70%;
+}
+
+div.info b {
+    font-family: "Avenir Next Bold", sans-serif;
+    color: inherit;
+    font-weight: bold;
+}

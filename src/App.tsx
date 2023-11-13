@@ -17,6 +17,7 @@ import Slogan1 from "./assets/imagens/imagens-scroll/texto1.png";
 import Banner2 from "./assets/imagens/imagens-scroll/imagem2.png";
 import Slogan2 from "./assets/imagens/imagens-scroll/texto2.png";
 import Projetos from "./sections/Projetos";
+import Numeros from "./sections/Numeros";
 
 const App = () => {
   const slides = [Slide1, Slide2, Slide3];
@@ -26,7 +27,7 @@ const App = () => {
       <Header />
       <Slider images={slides} floatingDots />
       <Descricao />
-      <Expertise />
+      <Numeros />
       <ScrollBanner banner={Banner1} slogan={Slogan1} />
       <Projetos />
       <FAQ />
