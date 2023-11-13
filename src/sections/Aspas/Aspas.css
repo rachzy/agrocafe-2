@@ -1,0 +1,33 @@
+section.aspas-section {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+
+    padding-block: 5vh;
+    height: 70vh;
+}
+
+section.aspas-section.background {
+    background-color: var(--verdemusgo);
+}
+
+section.aspas-section div.content {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+
+    width: 70vw;
+}
+
+section.aspas-section div.content p {
+    font-family: "Avenir Next Bold", sans-serif;
+    text-align: center;
+
+    margin-block: 5vh;
+}

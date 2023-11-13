@@ -18,6 +18,7 @@ import Banner2 from "./assets/imagens/imagens-scroll/imagem2.png";
 import Slogan2 from "./assets/imagens/imagens-scroll/texto2.png";
 import Projetos from "./sections/Projetos";
 import Numeros from "./sections/Numeros";
+import Aspas from "./sections/Aspas";
 
 const App = () => {
   const slides = [Slide1, Slide2, Slide3];
@@ -28,6 +29,11 @@ const App = () => {
       <Slider images={slides} floatingDots />
       <Descricao />
       <Numeros />
+      <Aspas quotesColor="Blue">
+          Em parceria com a Syngenta e a Netam, atendemos o produtor em todos os
+          segmentos da agricultura: consultorias, produtos, irrigação,
+          assistências e pulverização, via drone.
+      </Aspas>
       <ScrollBanner banner={Banner1} slogan={Slogan1} />
       <Projetos />
       <FAQ />
