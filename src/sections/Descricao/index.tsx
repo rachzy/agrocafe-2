@@ -13,6 +13,7 @@ import CulturaHortifruti from "../../assets/imagens/culturas/icone-hortifruti.pn
 import CulturaAlgodao from "../../assets/imagens/culturas/icone-algodao.png";
 import CulturaBox from "../../components/CulturaBox";
 import Box from "../../components/Box";
+import Title from "../../components/Title";
 
 export interface ICultura {
   icone: string;
@@ -117,7 +118,7 @@ const Descricao = () => {
             </div>
           </div>
           <div className="content-wrapper justify">
-            <h1>Somos a AgroCafé!</h1>
+            <Title>Somos a AgroCafé!</Title>
             <p>
               Representamos o trabalho pioneiro que trouxe novos caminhos e
               prosperidade para Monte Carmelo e região, em Minas Gerais.
