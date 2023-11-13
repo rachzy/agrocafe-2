@@ -1,0 +1,44 @@
+div.contact-box {
+    display: flex;
+    flex-direction: column;
+
+    width: 25vh;
+    height: 25vh;
+
+    padding: 3vh;
+
+    border-radius: 2vh;
+
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+div.contact-box div {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+div.contact-box div.logo-box {
+    height: 18vh;
+}
+
+div.contact-box div.logo-box img {
+    min-width: 5vh;
+    max-height: 10vh;
+    max-width: 100%;
+}
+
+div.contact-box div.text-box {
+    height: 7vh;
+}
+
+div.contact-box p {
+    font-size: 2.9vh;
+    font-family: "Dincon Bold", sans-serif;
+
+    max-width: 100%;
+    word-wrap: break-word;
+
+    text-align: center;
+}

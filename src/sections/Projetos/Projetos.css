@@ -1,0 +1,93 @@
+#containerProjects {
+  width: 100%;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 2rem;
+  grid-template-areas:
+    "img1 img3 img7 img7 img7"
+    "img1 img4 img7 img7 img7"
+    "img2 img5 img7 img7 img7"
+    "img2 img6 img6 img8 img9";
+}
+
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+  position: absolute;
+  top: 50%;
+  transform: translate(-25%, -50%);
+
+  width: 40vw;
+}
+.img5 {
+  grid-area: img5;
+}
+.img6 {
+  grid-area: img6;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
+.img9 {
+  grid-area: img9;
+}
+
+/* @media screen and (max-width: 768px) {
+  #containerProjects {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    overflow-x: scroll;
+    position: static;
+
+    height: 70vh;
+
+    margin: 0;
+  }
+
+  #containerProjects img {
+    object-fit: contain;
+  }
+} */
+
+@media screen and (max-width: 768px) {
+  #containerProjects {
+    gap: 0.4rem;
+  }
+  .img3,
+  .img5,
+  .img8,
+  .img9 {
+    width: 5rem;
+  }
+  .img1,
+  .img2 {
+    width: 5.1rem;
+  }
+  .img4 {
+    width: 10rem;
+  }
+  .img6 {
+    width: 7rem;
+  }
+  .img7 {
+    width: 12.5rem;
+  }
+}

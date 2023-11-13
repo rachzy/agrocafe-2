@@ -1,0 +1,33 @@
+section.expertise-section {
+  margin-top: 5vh;
+}
+
+section.expertise-section div.expertise-passos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  flex-grow: 1;
+
+  justify-content: space-between;
+
+  margin-block: 5vh;
+  row-gap: 8vh;
+}
+
+section.expertise-section div.expertise-passos-wrapper.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section.expertise-section {
+    width: 90%;
+  }
+  section.expertise-section div.expertise-passos-wrapper {
+    flex-direction: column;
+    display: none;
+  }
+
+  section.expertise-section div.expertise-passos-wrapper.mobile {
+    display: flex;
+  }
+}

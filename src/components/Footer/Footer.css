@@ -1,0 +1,132 @@
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  margin-top: 10vh;
+}
+#containerImg {
+  top: -2rem;
+  display: flex;
+
+  justify-content: space-between;
+  width: 80vw;
+}
+#imgLogo {
+  width: 10rem;
+  margin-top: -12vh;
+}
+#btnCima {
+  width: 4rem;
+  height: 4rem;
+
+  cursor: pointer;
+  transition: 0.2s all;
+
+  margin-top: -5vh;
+}
+
+#btnCima:hover {
+  transform: scale(1.05);
+}
+
+#containerConteudo {
+  color: white;
+  margin-block: 5vh;
+  width: 50%;
+
+  gap: 2vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-left: -5vh;
+}
+
+#containerConteudo span {
+  display: flex;
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+#containerConteudo span a {
+  margin-left: 2vh;
+}
+
+#logoAgrocafe {
+  width: 15rem;
+}
+#fio {
+  height: 3rem;
+}
+#portifolioAssinatura {
+  width: 5rem;
+}
+
+#containerSerafim {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  margin: auto;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  border-radius: 5vh 5vh 0 0;
+
+  box-shadow: 0vh 5vh 10vh 0vh black;
+  background: black;
+}
+#containerSerafim img {
+  width: 10rem;
+}
+
+@media screen and (max-width: 768px) {
+  #containerImg {
+    padding-inline: 3rem;
+    top: -1rem;
+  }
+  #imgLogo {
+    width: 8rem;
+    margin-top: -8vh;
+  }
+  #btnCima {
+    width: 3rem;
+    height: 3rem;
+    margin-top: -4vh;
+  }
+  #containerConteudo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  #containerConteudo span {
+    color: white;
+    padding-top: 0.5rem;
+    width: fit-content;
+  }
+  #logoAgrocafe {
+    width: 10rem;
+  }
+  #fio {
+    display: none;
+  }
+  #portifolioAssinatura {
+    width: 4rem;
+  }
+  #containerSerafim {
+    padding-block: 1.5rem 1rem;
+    padding-inline: 1.5rem;
+  }
+  #containerSerafim img {
+    width: 6rem;
+  }
+}

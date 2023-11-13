@@ -1,0 +1,52 @@
+div.contact-fake-button {
+  padding: 0.5vh 3vh;
+  width: fit-content;
+
+  margin-block: -5.5vh 1vh;
+  margin-inline: auto;
+
+  border-radius: 10vh;
+}
+
+div.contact-fake-button h1 {
+  font-size: 5vh;
+  font-family: "Dincon Bold", sans-serif;
+  text-align: center;
+}
+
+div.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 2vh;
+
+  justify-content: space-around;
+
+  width: 100%;
+  margin-top: 1.5vh;
+  margin-bottom: 6.5vh;
+}
+
+div.local-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+div.local-wrapper img {
+  width: 12vh;
+  margin-block: 4vh;
+}
+
+h2.contact-title {
+  margin-block: 8vh;
+}
+
+h2.contact-label {
+  text-align: center;
+  font-size: 3vh;
+}

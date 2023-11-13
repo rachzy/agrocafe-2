@@ -1,0 +1,163 @@
+/* FAKE-HEADER */
+
+div.fake-header {
+  display: none;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  z-index: 9999;
+
+  width: 100%;
+}
+
+header div.mobile {
+  display: none;
+}
+
+/* HEADER => MENU */
+
+header div.menu {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+  height: 15vh;
+}
+
+header div.menu .menu-content {
+  display: flex;
+
+  align-items: center;
+
+  width: 80vw;
+}
+
+/* WRAPPERS */
+
+.wrapper-logo {
+  display: flex;
+
+  flex: 1;
+}
+
+.wrapper-menu {
+  flex: 3;
+}
+
+.wrapper-side {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex: 1;
+}
+
+/* WRAPPER-LOGO */
+
+.wrapper-logo img {
+  width: 25vh;
+  cursor: pointer;
+
+  transition: 0.2s all;
+}
+
+.wrapper-logo img:hover {
+  transform: scale(1.1);
+}
+
+/* WRAPPER-MENU */
+
+.wrapper-menu ul.options {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.wrapper-menu ul.options {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper-menu ul.options li {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  max-width: 8vw;
+}
+
+a.menu-option {
+  font-family: "Dincon Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+
+  transition: 0.2s all;
+  font-size: 2.2vmin;
+
+  width: 100%;
+  text-align: center;
+}
+
+span.gota {
+  width: 2vh;
+  height: 2vh;
+
+  border-radius: 20vh 20vh 10vh 10vh;
+}
+
+.wrapper-menu ul.options a:hover {
+  transform: scale(1.05);
+}
+
+.wrapper-menu ul.options a:hover > div.underline {
+  width: 100%;
+}
+
+.wrapper-menu ul.options a:hover > ul.sub-options {
+  display: flex;
+}
+
+/* UNDERLINE */
+
+div.underline {
+  width: 0;
+  height: 4px;
+
+  margin-top: 1vh;
+
+  border-radius: 5vh;
+  transition: 0.6s all;
+}
+
+/* WRAPPER-SIDE */
+
+div.logo-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-inline: 5vh;
+
+  height: 23vh;
+  border-radius: 0vh 3vh 3vh;
+
+  box-shadow: 0vh 0.1vh 2vh 0vh black;
+}
+
+div.logo-container img {
+  width: 20vh;
+}

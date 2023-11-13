@@ -1,0 +1,48 @@
+div.pergunta-box {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 3vh 0;
+
+  border-bottom: 0.2vh solid #698434;
+
+  cursor: pointer;
+}
+
+div.titulo-box {
+  display: flex;
+  align-items: center;
+}
+
+div.titulo-box h2 {
+  font-size: 3vh;
+  margin-left: 1vh;
+}
+
+div.resposta-box {
+  height: 0;
+  overflow: hidden;
+
+  transition: 0.2s all;
+}
+
+div.resposta-box p {
+  font-size: 3vh;
+  font-weight: 100;
+  color: black;
+  text-align: justify;
+}
+
+div.pergunta-box.active > div.resposta-box {
+  height: fit-content;
+  padding-top: 2vh;
+}
+
+div.pergunta-box .arrow-icon {
+  transition: 0.2s all;
+}
+
+div.pergunta-box.active .arrow-icon {
+  transform: rotate(180deg);
+}
