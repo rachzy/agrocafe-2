@@ -20,6 +20,29 @@ header div.mobile {
   display: none;
 }
 
+/* HEADER => SUPER-HEADER */
+
+header div.super-header {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--verdemusgo);
+  width: 100%;
+
+  padding-block: 2vh 3vh;
+}
+
+header div.super-header img {
+  margin-inline: 3vh;
+  width: 15vh;
+}
+
+header div.super-header img.netafim-logo {
+  margin-top: 2vh;
+}
+
 /* HEADER => MENU */
 
 header div.menu {
@@ -29,7 +52,9 @@ header div.menu {
   align-items: center;
 
   flex-grow: 1;
-  height: 15vh;
+  height: 20vh;
+
+  background-color: var(--azulmain);
 }
 
 header div.menu .menu-content {
@@ -64,7 +89,7 @@ header div.menu .menu-content {
 /* WRAPPER-LOGO */
 
 .wrapper-logo img {
-  width: 25vh;
+  width: 35vh;
   cursor: pointer;
 
   transition: 0.2s all;
@@ -93,33 +118,27 @@ header div.menu .menu-content {
 
 .wrapper-menu ul.options li {
   display: flex;
+  flex-direction: column;
 
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   max-width: 8vw;
+
+  margin-top: 4vh;
+  height: 10vh;
 }
 
 a.menu-option {
-  font-family: "Dincon Bold", sans-serif;
+  font-family: "Avenir Next Regular", sans-serif;
   color: white;
-  text-transform: uppercase;
+
+  font-weight: bold;
 
   transition: 0.2s all;
-  font-size: 2.2vmin;
+  font-size: 3vmin;
 
   width: 100%;
   text-align: center;
-}
-
-span.gota {
-  width: 2vh;
-  height: 2vh;
-
-  border-radius: 20vh 20vh 10vh 10vh;
-}
-
-.wrapper-menu ul.options a:hover {
-  transform: scale(1.05);
 }
 
 .wrapper-menu ul.options a:hover > div.underline {
@@ -128,6 +147,17 @@ span.gota {
 
 .wrapper-menu ul.options a:hover > ul.sub-options {
   display: flex;
+}
+
+.wrapper-menu ul.options li img {
+  width: 1vh;
+
+  opacity: 0%;
+  transition: 0.2s all;
+}
+
+.wrapper-menu ul.options li:hover > img {
+  opacity: 100%;
 }
 
 /* UNDERLINE */
@@ -140,24 +170,4 @@ div.underline {
 
   border-radius: 5vh;
   transition: 0.6s all;
-}
-
-/* WRAPPER-SIDE */
-
-div.logo-container {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-
-  padding-inline: 5vh;
-
-  height: 23vh;
-  border-radius: 0vh 3vh 3vh;
-
-  box-shadow: 0vh 0.1vh 2vh 0vh black;
-}
-
-div.logo-container img {
-  width: 20vh;
 }

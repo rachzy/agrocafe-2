@@ -1,23 +1,8 @@
-.marrom.label {
-  color: #67462e;
-}
-
-.marrom.background {
-  background-color: #67462e !important;
-}
-
-.verde.label {
-  color: #698434;
-}
-
-.verde.background {
-  background-color: #698434 !important;
-}
-
-.cinza.label {
-  color: #e5e6e7;
-}
-
-.cinza.background {
-  background-color: #e5e6e7 !important;
+:root {
+  --azulmain: #00323e;
+  --azulpalavra: #00242d;
+  --verdemusgo: #878a45;
+  --verdeclaro: #d1d780;
+  --marrom: #96633b;
+  --cinza: #e5e6e7;
 }
