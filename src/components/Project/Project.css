@@ -1,0 +1,63 @@
+div.project {
+    display: flex;
+    flex-direction: column;
+
+    flex: 1 0 30%;
+    overflow: hidden;
+
+    margin: 5vh;
+}
+
+div.project h1 {
+    display: flex;
+
+    font-family: "Avenir Next Bold", sans-serif;
+    font-size: 7vmin;
+    color: var(--azulmain);
+    align-items: center;
+}
+
+div.project h1 img {
+    margin-inline: 2vh 3vh;
+    transition: 0.3s;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -webkit-user-drag: none;
+
+    cursor: pointer;
+    transition: 0.2s all;
+
+    width: 3vh;
+}
+
+div.project h1 img:hover {
+    transform: scale(1.1);
+}
+
+div.project p {
+    color: var(--azulmain);
+    margin-left: 2vh;
+
+    transition: max-height 0.3s;
+    transition: color 0.05s;
+}
+
+div.project p.description-text {
+    max-height: 0px;
+    color: transparent;
+}
+
+div.project.active > h1 img {
+    transform: rotate(90deg);
+}
+
+div.project.active > p.preview-text {
+    display: none;
+}
+
+div.project.active > p.description-text {
+    max-height: 100vh;
+    color: var(--azulmain);
+}

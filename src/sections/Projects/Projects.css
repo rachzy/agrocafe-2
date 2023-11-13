@@ -1,0 +1,27 @@
+section.projects-section {
+    display: flex;
+
+    align-items: center;
+
+    padding-block: 10vh 7vh;
+
+    width: 100vw;
+    min-height: 50vh;
+
+    background-color: var(--verdeclaro);
+}
+
+section.projects-section div.content {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    width: 80vw;
+}
+
+@media screen and (max-width: 768px) {
+    section.projects-section div.content {
+        width: 90vw;
+    }
+}

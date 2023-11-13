@@ -16,9 +16,9 @@ import Slogan1 from "./assets/imagens/imagens-scroll/texto1.png";
 
 import Banner2 from "./assets/imagens/imagens-scroll/imagem2.png";
 import Slogan2 from "./assets/imagens/imagens-scroll/texto2.png";
-import Projetos from "./sections/Projetos";
 import Numeros from "./sections/Numeros";
 import Aspas from "./sections/Aspas";
+import Projects from "./sections/Projects";
 
 const App = () => {
   const slides = [Slide1, Slide2, Slide3];
@@ -35,8 +35,8 @@ const App = () => {
           assistências e pulverização, via drone.
       </Aspas>
       <Expertise />
+      <Projects />
       <ScrollBanner banner={Banner1} slogan={Slogan1} />
-      <Projetos />
       <FAQ />
       <ScrollBanner banner={Banner2} slogan={Slogan2} />
       <Contact />
