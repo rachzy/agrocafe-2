@@ -1,7 +1,7 @@
 import React from "react";
 import "./Pergunta.css";
 
-import { AiOutlineDown } from "react-icons/ai";
+import ArrowIcon from "../../assets/other/ceta-perguntas.png";
 
 export interface IPergunta {
   pergunta: string;
@@ -16,7 +16,7 @@ const Pergunta: React.FC<IPergunta> = ({ pergunta, resposta }) => {
   return (
     <div onClick={handlePerguntaClick} className="pergunta-box">
       <div className="titulo-box">
-        <AiOutlineDown className="arrow-icon" fill="#698434" size={32} />
+        <img src={ArrowIcon} className="arrow-icon" />
         <h2 className="marrom label">{pergunta}</h2>
       </div>
       <div className="resposta-box">

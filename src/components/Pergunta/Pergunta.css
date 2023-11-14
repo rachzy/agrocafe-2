@@ -5,7 +5,7 @@ div.pergunta-box {
   width: 100%;
   padding: 3vh 0;
 
-  border-bottom: 0.2vh solid #698434;
+  border-bottom: 0.2vh solid white;
 
   cursor: pointer;
 }
@@ -15,9 +15,18 @@ div.titulo-box {
   align-items: center;
 }
 
+div.titulo-box img {
+  width: 3vh;
+  margin-right: 3vh;
+}
+
 div.titulo-box h2 {
+  font-family: "Avenir Next Bold", sans-serif;
   font-size: 3vh;
+  font-weight: bold;
+
   margin-left: 1vh;
+  color: var(--azulmain);
 }
 
 div.resposta-box {
@@ -30,7 +39,7 @@ div.resposta-box {
 div.resposta-box p {
   font-size: 3vh;
   font-weight: 100;
-  color: black;
+  color: var(--azulmain);
   text-align: justify;
 }
 
@@ -44,5 +53,5 @@ div.pergunta-box .arrow-icon {
 }
 
 div.pergunta-box.active .arrow-icon {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
 }
