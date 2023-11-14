@@ -67,11 +67,12 @@ const Descricao = () => {
     });
   }
   return (
-    <section className="desc-section" id="sobre">
-      <div
-        className="main-content-wrapper"
-        style={{ backgroundImage: `url(${Background})` }}
-      >
+    <section
+      className="desc-section"
+      id="sobre"
+      style={{ backgroundImage: `url(${Background})` }}
+    >
+      <div className="main-content-wrapper">
         <div className="content">
           <div className="content-wrapper">
             <div className="box-container">

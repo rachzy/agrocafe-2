@@ -1,6 +1,9 @@
 section.desc-section {
   display: flex;
 
+  justify-content: center;
+  align-items: center;
+
   width: 100vw;
   height: fit-content;
 }
@@ -23,6 +26,7 @@ section.desc-section div.main-content-wrapper {
   flex-wrap: wrap;
 
   padding-block: 10vh;
+  width: 80vw;
 
   justify-content: center;
 }
@@ -89,6 +93,8 @@ section.desc-section div.content-wrapper.justify p {
     flex-direction: column;
     height: fit-content;
     padding-block: 15vh 10vh;
+
+    width: 100vw;
 
     justify-content: center;
     align-items: center;
