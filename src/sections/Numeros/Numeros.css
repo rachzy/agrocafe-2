@@ -37,7 +37,7 @@ div.info img {
     width: 50%;
 }
 
-div.info h1 {
+div.info h1, span {
     font-family: "Avenir Next Bold", sans-serif;
     font-size: 8vmin;
     color: inherit;
