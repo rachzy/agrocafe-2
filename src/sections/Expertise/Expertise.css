@@ -152,3 +152,14 @@ div.block.brown {
 div.block.white {
     color: var(--azulmain);
 }
+
+/* IMAGE-BANNER */
+
+div.image-banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    object-fit: fill;
+}
+
