@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-import LogoOrgulhasamenteIrrigante from "../../assets/imagens/logos/orgulhosamente-irrigante.png";
+import LogoOrgulhasamenteIrrigante from "../../assets/logos/orgulhosamente-irrigante.png";
 import FooterCima from "../../assets/imagens/botoes/footer-cima.png";
 import LogoAgrocafeRodape from "../../assets/imagens/logos/logo-agrocafe-rodapé.png";
 import LogoNetafimRodape from "../../assets/imagens/logos/logo-netafim-assinatura.png";
@@ -9,7 +9,7 @@ import ImgPortifolio from "../../assets/imagens/logos/portfolio-assinatura.png";
 
 const Footer = () => {
   return (
-    <footer className="marrom background">
+    <footer>
       <div id="containerImg">
         <img
           id="imgLogo"
