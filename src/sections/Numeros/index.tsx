@@ -13,7 +13,7 @@ const Numeros = () => {
       <div className="content">
         <div className="info">
           <img src={LightIcon} />
-          <h1>+<CountUp end={20} duration={10} /></h1>
+          <h1>+<CountUp end={20} duration={10} enableScrollSpy /></h1>
           <p>
             <b>anos</b> de inovação e tecnologia
           </p>
