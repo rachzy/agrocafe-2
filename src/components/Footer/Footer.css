@@ -19,23 +19,30 @@ footer {
   margin-top: -8vh;
 }
 #btnCima {
-  width: 4rem;
-  height: 4rem;
+  width: 4vh;
+  height: 4vh;
+
+  border: 2vh solid white;
+  border-radius: 4vh;
+  background-color: white;
+
+  object-fit: contain;
 
   cursor: pointer;
   transition: 0.2s all;
 
   margin-top: -3vh;
+  transform: rotate(-90deg);
 }
 
 #btnCima:hover {
-  transform: scale(1.05);
+  transform: rotate(-90deg) scale(1.05);
 }
 
 #containerConteudo {
   color: white;
   margin-block: 5vh;
-  width: 50%;
+  width: 80%;
 
   gap: 2vh;
 
@@ -44,6 +51,24 @@ footer {
   align-items: center;
 
   margin-left: -5vh;
+}
+
+#containerConteudo div.contact-block {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  justify-content: space-between;
+  row-gap: 2vh;
+  
+  padding-inline: 4vh;
+}
+
+#containerConteudo div.contact-block div.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 #containerConteudo span {

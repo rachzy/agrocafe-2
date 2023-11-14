@@ -1,11 +1,20 @@
 import "./Footer.css";
 
 import LogoOrgulhasamenteIrrigante from "../../assets/logos/orgulhosamente-irrigante.png";
-import FooterCima from "../../assets/imagens/botoes/footer-cima.png";
-import LogoAgrocafeRodape from "../../assets/imagens/logos/logo-agrocafe-rodapé.png";
-import LogoNetafimRodape from "../../assets/imagens/logos/logo-netafim-assinatura.png";
-import FioEntreLogosRodape from "../../assets/imagens/demais-imagens/fio-entre-logos-rodapé.png";
-import ImgPortifolio from "../../assets/imagens/logos/portfolio-assinatura.png";
+import FooterCima from "../../assets/other/ceta-perguntas.png";
+import LogoAgrocafeRodape from "../../assets/logos/agrocafe.png";
+import LogoNetafimRodape from "../../assets/logos/netafim.png";
+import LogoSyngenta from "../../assets/logos/syngenta.png";
+
+import TelephoneIcon from "../../assets/icons/telefone.png";
+import WhatsappIcon from "../../assets/icons/whatsapp.png";
+import EmailIcon from "../../assets/icons/contato.png";
+import InstagramIcon from "../../assets/icons/instagram.png";
+import LocalizacaoIcon from "../../assets/icons/localizacao.png";
+
+import LogoPortfolio from "../../assets/logos/portfolio.png";
+
+import ContactBox from "../ContactBox/index";
 
 const Footer = () => {
   return (
@@ -27,25 +36,29 @@ const Footer = () => {
       </div>
 
       <div id="containerConteudo">
-        <img id="logoAgrocafe" src={LogoAgrocafeRodape} alt="" />
-        <img id="fio" src={FioEntreLogosRodape} alt="" />
-        <span>
-          Desenvolvido por{" "}
-          <a href="https://agenciaportfolio.com.br/" target="_blank">
-            {" "}
-            <img
-              id="portifolioAssinatura"
-              src={ImgPortifolio}
-              alt="Portifolio"
-            />
-          </a>
-        </span>
-      </div>
-      <a href={"https://www.netafim.com.br/"} target="_blank">
-        <div id="containerSerafim" className="verde background">
-          <img src={LogoNetafimRodape} alt="Assinatura Netafim" />
+        <div className="contact-block">
+          <img src={LogoAgrocafeRodape} alt="logo agrocafe" />
+          <div className="logo-container">
+            <img src={LogoNetafimRodape} alt="logo netafim agrocafe" style={{marginTop: "5vh"}} />
+            <img src={LogoSyngenta} alt="logo syngenta agrocafe" />
+          </div>
         </div>
-      </a>
+        <div className="contact-block">
+          <ContactBox icone={TelephoneIcon}>34 3842-5025</ContactBox>
+          <ContactBox icone={WhatsappIcon}>34 99908-4113</ContactBox>
+          <ContactBox icone={EmailIcon}>irrigacao@agrocafe.com</ContactBox>
+        </div>
+        <div className="contact-block">
+          <ContactBox icone={TelephoneIcon}>@agrocafemonte</ContactBox>
+          <ContactBox icone={WhatsappIcon}>
+            Av. Olegário Maciel, 988 Bairro Batuque Monte Carmelo/MG 38500-000
+          </ContactBox>
+        </div>
+      </div>
+      <div className="downline">
+          <h4>© 2023 AgroCafé.</h4>
+          <img src={LogoPortfolio} alt="logo portfolio agrocafe" />
+      </div>
     </footer>
   );
 };

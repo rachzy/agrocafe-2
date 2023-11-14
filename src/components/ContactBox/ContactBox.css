@@ -1,15 +1,14 @@
 div.contact-box {
     display: flex;
-    flex-direction: column;
 
-    width: 25vh;
-    height: 25vh;
+    align-items: center;
 
-    padding: 3vh;
+    padding: 2vh 2.5vh;
 
-    border-radius: 2vh;
+    background-color: var(--verdemusgo);
 
-    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 3rem;
+
 }
 
 div.contact-box div {
@@ -19,23 +18,14 @@ div.contact-box div {
     align-items: center;
 }
 
-div.contact-box div.logo-box {
-    height: 18vh;
-}
-
-div.contact-box div.logo-box img {
-    min-width: 5vh;
-    max-height: 10vh;
-    max-width: 100%;
-}
-
-div.contact-box div.text-box {
-    height: 7vh;
+div.contact-box img {
+    max-width: 50%;
+    margin-right: 2vh;
 }
 
 div.contact-box p {
     font-size: 2.9vh;
-    font-family: "Dincon Bold", sans-serif;
+    font-family: "Avenir Next Bold", sans-serif;
 
     max-width: 100%;
     word-wrap: break-word;
