@@ -8,7 +8,7 @@ import ClosingQuotesWhite from "../../assets/other/aspas-baixo2.png";
 
 interface IProps {
   quotesColor: "Blue" | "White";
-  children: string;
+  children: string | React.ReactNode;
   backgroundImage?: string;
 }
 
