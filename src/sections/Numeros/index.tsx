@@ -1,4 +1,3 @@
-import React from "react";
 import "./Numeros.css";
 
 import CountUp from "react-countup";
@@ -20,14 +19,14 @@ const Numeros = () => {
         </div>
         <div className="info">
           <img src={FarmerIcon} />
-          <h1>+<CountUp end={150} duration={10} /></h1>
+          <h1>+<CountUp end={150} duration={10} enableScrollSpy /></h1>
           <p>
             <b>produtores atendidos</b> com consultoria agronômica
           </p>
         </div>
         <div className="info">
           <img src={IrrigarIcon} />
-          <h1>+<CountUp end={20000} duration={10} /></h1>
+          <h1>+<CountUp end={20000} duration={10} enableScrollSpy /></h1>
           <p>
             <b>hectares de irrigação</b> já implantados
           </p>

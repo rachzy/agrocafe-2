@@ -3,8 +3,6 @@ import "./Header.css";
 import NetafimLogo from "../../assets/logos/netafim.png";
 import SyngentaLogo from "../../assets/logos/syngenta.png";
 
-import LogoMobile from "../../assets/imagens/logos/logo-agrocafe-mobile.png";
-
 import DefaultSection from "./DefaultSection";
 import MobileSection from "./MobileSection";
 

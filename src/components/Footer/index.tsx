@@ -50,8 +50,8 @@ const Footer = () => {
           <ContactBox icone={EmailIcon} style={{fontSize: "2.3vh"}}>irrigacao@agrocafe.com</ContactBox>
         </div>
         <div className="contact-block">
-          <ContactBox icone={TelephoneIcon} flex={1}>@agrocafemonte</ContactBox>
-          <ContactBox icone={WhatsappIcon} flex={2}>
+          <ContactBox icone={InstagramIcon} flex={1}>@agrocafemonte</ContactBox>
+          <ContactBox icone={LocalizacaoIcon} flex={2}>
             Av. Olegário Maciel, 988 Bairro Batuque Monte Carmelo/MG 38500-000
           </ContactBox>
         </div>
