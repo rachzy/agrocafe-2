@@ -2,15 +2,13 @@ import React, { useState } from "react";
 
 import Descricao from "./sections/Descricao";
 import FAQ from "./sections/FAQ";
-import Contact from "./sections/Contact";
 import Expertise from "./sections/Expertise";
-import ScrollBanner from "./sections/ScrollBanner";
 import Numeros from "./sections/Numeros";
 import Aspas from "./sections/Aspas";
 import Projects from "./sections/Projects";
 import Services from "./sections/Services";
-import Modal from "./components/Modal";
 
+import Modal from "./components/Modal";
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Footer from "./components/Footer";
@@ -18,11 +16,6 @@ import Footer from "./components/Footer";
 import Slide1 from "./assets/sliders/imagem1.jpg";
 import Slide2 from "./assets/sliders/imagem2.jpg";
 import Slide3 from "./assets/sliders/imagem3.jpg";
-
-import Banner1 from "./assets/imagens/imagens-scroll/imagem1.png";
-import Slogan1 from "./assets/imagens/imagens-scroll/texto1.png";
-import Banner2 from "./assets/imagens/imagens-scroll/imagem2.png";
-import Slogan2 from "./assets/imagens/imagens-scroll/texto2.png";
 
 import Background from "./assets/scrolling/bg-frase.jpg";
 

@@ -1,71 +1,11 @@
 import "./Descricao.css";
 
-import Gotinhas from "../../assets/imagens/demais-imagens/gotinhas.png";
 import Background from "../../assets/background/curvas-de-nivel.png";
 
-import CulturaCafe from "../../assets/imagens/culturas/icone-cafe.png";
-import CulturaSoja from "../../assets/imagens/culturas/icone-soja.png";
-import CulturaPastagens from "../../assets/imagens/culturas/icone-pastagens.png";
-import CulturaMilho from "../../assets/imagens/culturas/icone-milho.png";
-import CulturaSorgo from "../../assets/imagens/culturas/icone-sorgo.png";
-import CulturaFeijao from "../../assets/imagens/culturas/icone-feijao.png";
-import CulturaHortifruti from "../../assets/imagens/culturas/icone-hortifruti.png";
-import CulturaAlgodao from "../../assets/imagens/culturas/icone-algodao.png";
-import CulturaBox from "../../components/CulturaBox";
 import Box from "../../components/Box";
 import Title from "../../components/Title";
 
-export interface ICultura {
-  icone: string;
-  label: string;
-}
-
 const Descricao = () => {
-  const culturas: ICultura[] = [
-    {
-      icone: CulturaCafe,
-      label: "Café",
-    },
-
-    {
-      icone: CulturaSoja,
-      label: "Soja",
-    },
-    {
-      icone: CulturaPastagens,
-      label: "Pastagens",
-    },
-    {
-      icone: CulturaMilho,
-      label: "Milho",
-    },
-    {
-      icone: CulturaSorgo,
-      label: "Sorgo",
-    },
-    {
-      icone: CulturaFeijao,
-      label: "Feijão",
-    },
-    {
-      icone: CulturaHortifruti,
-      label: "Hortifruti",
-    },
-    {
-      icone: CulturaAlgodao,
-      label: "Algodão",
-    },
-  ];
-
-  function renderCulturas() {
-    return culturas.map((cultura) => {
-      return (
-        <CulturaBox key={cultura.icone} icone={cultura.icone}>
-          {cultura.label}
-        </CulturaBox>
-      );
-    });
-  }
   return (
     <section
       className="desc-section"
