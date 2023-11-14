@@ -5,14 +5,16 @@ interface IProps {
   icone: string;
   href?: string;
   children: string;
+  style?: React.CSSProperties;
+  flex?: number;
 }
 
-const ContactBox: React.FC<IProps> = ({ icone, children, href }) => {
+const ContactBox: React.FC<IProps> = ({ icone, children, href, style, flex }) => {
   return (
-    <a href={href} target="_blank">
+    <a href={href} target="_blank" style={{flex: flex ? flex.toString() : "1"}}>
       <div className="contact-box verde background">
           <img src={icone} />
-          <p>{children}</p>
+          <p style={style}>{children}</p>
       </div>
     </a>
   );

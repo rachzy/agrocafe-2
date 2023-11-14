@@ -36,27 +36,28 @@ const Footer = () => {
       </div>
 
       <div id="containerConteudo">
-        <div className="contact-block">
-          <img src={LogoAgrocafeRodape} alt="logo agrocafe" />
+        <div className="contact-block logos">
+          <div />
+          <img src={LogoAgrocafeRodape} alt="logo agrocafe" className="companyLogo" />
           <div className="logo-container">
-            <img src={LogoNetafimRodape} alt="logo netafim agrocafe" style={{marginTop: "5vh"}} />
+            <img src={LogoNetafimRodape} alt="logo netafim agrocafe" style={{marginTop: "2vh"}} />
             <img src={LogoSyngenta} alt="logo syngenta agrocafe" />
           </div>
         </div>
         <div className="contact-block">
           <ContactBox icone={TelephoneIcon}>34 3842-5025</ContactBox>
           <ContactBox icone={WhatsappIcon}>34 99908-4113</ContactBox>
-          <ContactBox icone={EmailIcon}>irrigacao@agrocafe.com</ContactBox>
+          <ContactBox icone={EmailIcon} style={{fontSize: "2.3vh"}}>irrigacao@agrocafe.com</ContactBox>
         </div>
         <div className="contact-block">
-          <ContactBox icone={TelephoneIcon}>@agrocafemonte</ContactBox>
-          <ContactBox icone={WhatsappIcon}>
+          <ContactBox icone={TelephoneIcon} flex={1}>@agrocafemonte</ContactBox>
+          <ContactBox icone={WhatsappIcon} flex={2}>
             Av. Olegário Maciel, 988 Bairro Batuque Monte Carmelo/MG 38500-000
           </ContactBox>
         </div>
       </div>
       <div className="downline">
-          <h4>© 2023 AgroCafé.</h4>
+          <h3>© 2023 AgroCafé.</h3>
           <img src={LogoPortfolio} alt="logo portfolio agrocafe" />
       </div>
     </footer>

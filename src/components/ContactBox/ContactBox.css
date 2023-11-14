@@ -3,11 +3,16 @@ div.contact-box {
 
     align-items: center;
 
-    padding: 2vh 2.5vh;
+    min-width: fit-content;
+
+    padding-block: 2vh;
+    padding-left: 2vh;
+    width: 100%;
 
     background-color: var(--verdemusgo);
 
     border-radius: 3rem;
+    overflow: hidden;
 
 }
 
@@ -28,7 +33,13 @@ div.contact-box p {
     font-family: "Avenir Next Bold", sans-serif;
 
     max-width: 100%;
-    word-wrap: break-word;
 
     text-align: center;
+    text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 768px) {
+    div.contact-box p {
+        font-size: 2.4vh;
+    }
 }

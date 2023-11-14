@@ -12,7 +12,7 @@ footer {
   display: flex;
 
   justify-content: space-between;
-  width: 80vw;
+  width: 65vw;
 }
 #imgLogo {
   width: 10rem;
@@ -47,8 +47,8 @@ footer {
   gap: 2vh;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: center;
 
   margin-left: -5vh;
 }
@@ -61,14 +61,40 @@ footer {
 
   justify-content: space-between;
   row-gap: 2vh;
+
+  flex-grow: 1;
   
   padding-inline: 4vh;
+  height: 40vh;
+}
+
+#containerConteudo div.contact-block.logos {
+  align-items: center;
+}
+
+#containerConteudo img.companyLogo {
+  width: 70%;
+}
+
+#containerConteudo div.contact-block div,a {
+  flex: 1;
 }
 
 #containerConteudo div.contact-block div.logo-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  column-gap: 2vh;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  #containerImg {
+    width: 90vw;
+  }
+  #containerConteudo div.contact-block {
+    width: 80%;
+  }
 }
 
 #containerConteudo span {
@@ -131,7 +157,7 @@ footer {
     gap: 3rem;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
   }
   #containerConteudo span {
     color: white;
@@ -154,4 +180,26 @@ footer {
   #containerSerafim img {
     width: 6rem;
   }
+}
+
+footer div.downline {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding-block: 2vh;
+
+  width: 100vw;
+  background-color: white;
+}
+
+footer div.downline h3 {
+  font-size: 2.5vh;
+  color: var(--azulmain);
+}
+
+footer div.downline img {
+  margin-left: 3vh;
+  margin-top: 0.5vh;
 }
