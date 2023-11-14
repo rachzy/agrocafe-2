@@ -7,7 +7,10 @@ section.desc-section {
 
 section.desc-section div.content {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+
+  row-gap: 5vh;
 
   width: 87vw;
 }
@@ -17,6 +20,7 @@ section.desc-section div.content {
 section.desc-section div.main-content-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   padding-block: 10vh;
 
@@ -27,7 +31,7 @@ section.desc-section div.main-content-wrapper div.content {
   display: flex;
   flex-direction: row;
 
-  width: 80vw;
+  width: 100vw;
   height: 100%;
 }
 
@@ -68,6 +72,9 @@ section.desc-section div.content-wrapper.justify p {
     width: 100%;
     height: fit-content;
 
+    justify-content: center;
+    align-items: center;
+
     margin: auto;
     flex: 1;
   }
@@ -107,9 +114,12 @@ section.desc-section div.content-wrapper.justify p {
     text-align: center;
   }
 
-  section.desc-section div.content-wrapper p {
+  section.desc-section div.content-wrapper.justify p {
     font-size: 3.5vh;
     margin-block: 3vh;
+    text-align: center;
+
+    width: 80%;
   }
 }
 
@@ -123,6 +133,6 @@ section.desc-section div.box-container {
 
 @media screen and (max-width: 920px) {
   section.desc-section div.box-container {
-    max-width: 100%;
+    min-width: 80%;
   }
 }

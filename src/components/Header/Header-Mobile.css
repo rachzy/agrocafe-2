@@ -142,22 +142,14 @@ header .mobile-menu nav.options li:hover > ul.sub-options {
     width: 100vw;
   }
 
-  /* FAKE-HEADER */
-  div.fake-header {
-    display: flex;
+  /* SUPER HEADER */
 
-    align-items: center;
-
-    width: 100vw;
-
-    padding-block: 1vw;
-
-    margin-bottom: 4vh;
+  header div.super-header {
+    justify-content: start;
   }
 
-  div.fake-header img {
-    width: 25vh;
-    margin-left: 5vh;
+  header div.super-header img {
+    margin-inline: 1vh;
   }
 
   /* SUB-OPTIONS */

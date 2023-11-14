@@ -9,15 +9,21 @@ div.box {
     margin: 3vh;
 
     box-shadow: 2vh 1vh 8vh rgba(0, 0, 0, 0.452);
-}
-
-div.box h3 {
-    font-family: "Avenir Next Bold", sans-serif;
-    text-transform: uppercase;
+    box-sizing: border-box;
 }
 
 div.box h3,p {
     color: inherit;
+}
+
+div.box h3 {
+    font-family: "Avenir Next Bold", sans-serif;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+div.box p {
+    font-size: 3vh;
 }
 
 div.box.blue {
@@ -37,4 +43,13 @@ div.box.green {
 div.box.green ul {
     list-style: disc;
     margin-left: 3vh;
+}
+
+@media screen and (max-width: 768px) {
+    div.box {
+        max-width: 100%;
+        min-width: 100%;
+        margin: 0;
+        margin-block: 3vh;
+    }
 }

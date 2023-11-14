@@ -86,8 +86,10 @@ header div.menu .menu-content {
 /* WRAPPER-LOGO */
 
 .wrapper-logo img {
-  width: 35vh;
+  width: 30vmin;
   cursor: pointer;
+
+  margin-right: 3vh;
 
   transition: 0.2s all;
 }
@@ -132,11 +134,16 @@ a.menu-option {
   font-weight: bold;
 
   transition: 0.2s all;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
 
   width: 100%;
   text-align: center;
   outline: none;
+
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  margin-inline: 2vh;
 }
 
 .wrapper-menu ul.options a:hover > div.underline {
