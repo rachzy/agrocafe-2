@@ -13,12 +13,16 @@ import Service7 from "../../assets/photos/7.jpg";
 import Service8 from "../../assets/photos/8.jpg";
 import Service from '../../components/Service';
 
-const Services = () => {
+interface IProps {
+  toggleModal: (imageSource: string) => void;
+}
+
+const Services: React.FC<IProps> = ({toggleModal}) => {
     const services = [Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8];
 
     function renderServices(): React.ReactNode {
       return services.map((service) => {
-        return <Service image={service} />
+        return <Service image={service} toggleModal={toggleModal} />
       })
     }
   return (

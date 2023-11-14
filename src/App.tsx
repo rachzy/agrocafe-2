@@ -1,3 +1,5 @@
+import React, {useState} from "react";
+
 import Header from "./components/Header";
 import Slider from "./components/Slider";
 import Descricao from "./sections/Descricao";
@@ -20,12 +22,33 @@ import Numeros from "./sections/Numeros";
 import Aspas from "./sections/Aspas";
 import Projects from "./sections/Projects";
 import Services from "./sections/Services";
+import Modal from "./components/Modal";
+
+export interface IModal {
+  imageSource: string | null;
+  active: boolean;
+}
 
 const App = () => {
   const slides = [Slide1, Slide2, Slide3];
+  const [modal, setModal] = useState<IModal>({
+    active: false,
+    imageSource: null,
+  });
+
+  function toggleModal(imageSource: string | null) {
+    setModal(() => {
+      const newModal: IModal = {
+        imageSource: imageSource,
+        active: imageSource ? true : false
+      }
+      return newModal;
+    })
+  }
 
   return (
     <main>
+      <Modal modal={modal} setActive={toggleModal.bind(this, null)} />
       <Header />
       <Slider images={slides} floatingDots />
       <Descricao />
@@ -37,9 +60,9 @@ const App = () => {
       </Aspas>
       <Expertise />
       <Projects />
-      <Services />
-      <ScrollBanner banner={Banner1} slogan={Slogan1} />
+      <Services toggleModal={toggleModal} />
       <FAQ />
+      <ScrollBanner banner={Banner1} slogan={Slogan1} />
       <ScrollBanner banner={Banner2} slogan={Slogan2} />
       <Contact />
       <Footer />
