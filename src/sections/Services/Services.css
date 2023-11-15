@@ -63,6 +63,6 @@ section.services-section button:hover {
 
 section.services-section button span {
     color: var(--verdemusgo);
-    font-weight: bold;
+    font-weight: 100;
     font-size: 4vh;
 }

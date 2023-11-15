@@ -42,7 +42,7 @@ header div.super-header img.netafim.logo {
 
 /* HEADER => MOBILE LOGO */
 
-header div.mobile-logo {
+div.header-mobile-logo {
   display: none;
 }
 

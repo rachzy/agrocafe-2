@@ -6,6 +6,10 @@ section.desc-section {
 
   width: 100vw;
   height: fit-content;
+
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-color: var(--cinza);
 }
 
 section.desc-section div.content {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Title from '../../components/Title'
 
 import "./Services.css";
@@ -11,6 +11,8 @@ import Service5 from "../../assets/photos/5.jpg";
 import Service6 from "../../assets/photos/6.jpg";
 import Service7 from "../../assets/photos/7.jpg";
 import Service8 from "../../assets/photos/8.jpg";
+import Service9 from "../../assets/photos/9.jpg";
+import Service10 from "../../assets/photos/10.jpg";
 import Service from '../../components/Service';
 
 interface IProps {
@@ -18,12 +20,37 @@ interface IProps {
 }
 
 const Services: React.FC<IProps> = ({toggleModal}) => {
-    const services = [Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8];
+    const services = [Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8, Service9, Service10];
+    const [showMoreServices, setShowMoreServices] = useState(false);
 
     function renderServices(): React.ReactNode {
-      return services.map((service) => {
+      return services.map((service, index) => {
+        if(index > 7 && !showMoreServices) return null;
         return <Service key={service} image={service} toggleModal={toggleModal} />
       })
+    }
+
+    function handleButtonClick() {
+      setShowMoreServices((currentValue) => !currentValue);
+    }
+
+    function renderLabel(): React.ReactNode {
+      if(!showMoreServices) {
+        return (
+          <>
+          mais {" "}
+          <span>+
+          </span>
+          </>
+        )
+      }
+      return (
+        <>
+        menos {" "}
+        <span>-
+        </span>
+        </>
+      )
     }
   return (
     <section className="services-section">
@@ -32,7 +59,7 @@ const Services: React.FC<IProps> = ({toggleModal}) => {
         <div className="servicos-container">
           {renderServices()}
         </div>
-        <button>Ver mais <span>+</span></button>
+        <button onClick={handleButtonClick}>Ver {renderLabel()}</button>
       </div>
     </section>
   )

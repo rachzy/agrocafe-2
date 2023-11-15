@@ -5,9 +5,10 @@ div.contact-box {
 
     min-width: fit-content;
 
-    padding-block: 2vh;
     padding-left: 2vh;
     width: 100%;
+
+    height: 100%;
 
     background-color: var(--verdemusgo);
 
@@ -39,6 +40,9 @@ div.contact-box p {
 }
 
 @media screen and (max-width: 768px) {
+    div.contact-box {
+        padding-block: 2vh;
+    }
     div.contact-box p {
         font-size: 2.4vh;
     }
