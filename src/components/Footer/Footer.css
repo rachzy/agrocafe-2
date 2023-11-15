@@ -77,7 +77,7 @@ footer {
   width: 30vh;
 }
 
-#containerConteudo div.contact-block div,a {
+#containerConteudo div.contact-block div, #containerConteudo div.contact-block a {
   flex: 1;
 }
 
@@ -205,6 +205,10 @@ footer div.downline {
   background-color: white;
 }
 
+footer div.downline a {
+  width: fit-content;
+}
+
 footer div.downline h3 {
   font-size: 2.5vh;
   color: var(--azulmain);
@@ -213,5 +217,5 @@ footer div.downline h3 {
 footer div.downline img {
   margin-left: 3vh;
   margin-top: 0.5vh;
-  width: 14vh;
+  width: 12vh;
 }

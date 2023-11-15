@@ -58,7 +58,9 @@ const Footer = () => {
       </div>
       <div className="downline">
           <h3>© 2023 AgroCafé.</h3>
-          <img src={LogoPortfolio} alt="logo portfolio agrocafe" />
+          <a href="https://agenciaportfolio.com.br" target="_blank">
+            <img src={LogoPortfolio} alt="logo portfolio agrocafe" />
+          </a>
       </div>
     </footer>
   );

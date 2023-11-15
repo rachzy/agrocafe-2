@@ -12,8 +12,8 @@ interface IProps {
 const Project: React.FC<IProps> = ({ project, onClick }) => {
   return (
     <div className={`project ${project.active && "active"}`}>
-      <h1>
-        <img onClick={onClick.bind(this, project.title)} src={ArrowIcon} alt="arrow icon" draggable={false} />{" "}
+      <h1 onClick={onClick.bind(this, project.title)}>
+        <img src={ArrowIcon} alt="arrow icon" draggable={false} />{" "}
         {project.title}
       </h1>
       <p className="preview-text">{project.previewText}</p>

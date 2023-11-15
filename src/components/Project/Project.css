@@ -15,10 +15,18 @@ div.project h1 {
     font-size: 7vmin;
     color: var(--azulmain);
     align-items: center;
+
+    cursor: pointer;
+    transition: 0.2s all;
+    margin-left: 2.5vh;
+}
+
+div.project h1:hover {
+    transform: scale(1.05);
 }
 
 div.project h1 img {
-    margin-inline: 2vh 3vh;
+    margin-right :3vh;
     transition: 0.3s;
 
     -webkit-user-select: none; /* Safari */
@@ -26,14 +34,7 @@ div.project h1 img {
     user-select: none; /* Standard syntax */
     -webkit-user-drag: none;
 
-    cursor: pointer;
-    transition: 0.2s all;
-
     width: 3vh;
-}
-
-div.project h1 img:hover {
-    transform: scale(1.1);
 }
 
 div.project p {
@@ -51,6 +52,7 @@ div.project p.description-text {
 
 div.project.active > h1 img {
     transform: rotate(90deg);
+    margin-left: 3vh;
 }
 
 div.project.active > p.preview-text {
