@@ -23,7 +23,7 @@ div.modal-window.active {
 
 div.modal-window img {
     width: 50%;
-    border-radius: 3rem;
+    border-radius: 1.5rem;
 }
 
 div.modal-window svg {

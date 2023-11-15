@@ -63,7 +63,6 @@ const Footer = () => {
           </ContactBox>
           <ContactBox
             icone={EmailIcon}
-            style={{ fontSize: "2.3vh" }}
             href="mailto:irrigacao@agrocafe.com"
           >
             irrigacao@agrocafe.com

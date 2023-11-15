@@ -66,9 +66,9 @@ const Services: React.FC<IProps> = ({ toggleModal }) => {
     );
   }
   return (
-    <section className="services-section">
+    <section className="services-section" id="projetos">
       <div className="content">
-        <Title>Alguns dos nossos serviços e projetos</Title>
+        <Title>Alguns dos nossos projetos e serviços</Title>
         <div className="servicos-container">{renderServices()}</div>
         <button onClick={handleButtonClick}>Ver {renderLabel()}</button>
       </div>

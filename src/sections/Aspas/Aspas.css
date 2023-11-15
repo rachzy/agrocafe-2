@@ -42,4 +42,7 @@ section.aspas-section div.content p {
         height: fit-content;
     }
     
+    section.aspas-section {
+        background-attachment: unset;
+    }
 }

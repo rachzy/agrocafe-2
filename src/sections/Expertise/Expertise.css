@@ -164,6 +164,11 @@ div.image-banner {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    object-fit: fill;
 }
 
+@media screen and (max-width: 768px) {
+    div.image-banner {
+        background-attachment: unset;
+        background-size: cover;
+    }
+}

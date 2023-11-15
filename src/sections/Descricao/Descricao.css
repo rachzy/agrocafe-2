@@ -74,6 +74,11 @@ section.desc-section div.content-wrapper.justify p {
 }
 
 @media screen and (max-width: 920px) {
+  section.desc-section {
+    background-size: 100%;
+    background: none;
+  }
+
   section.desc-section div.content-wrapper {
     flex-direction: column;
 
