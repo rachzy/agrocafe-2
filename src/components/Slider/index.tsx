@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import "./Slider.css";
 
 interface IProps {
@@ -6,8 +6,25 @@ interface IProps {
   floatingDots?: boolean;
 }
 
+import SliderDireita from "../../assets/other/slider-direita.png";
+import SliderEsquerda from "../../assets/other/slider-esquerda.png";
+
 const Slider: React.FC<IProps> = ({ images, floatingDots }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleNextSlideButtonClick = useCallback(() => {
+    setCurrentSlide((currentValue) => {
+      if (currentValue >= images.length - 1) return 0;
+      return currentValue + 1;
+    });
+  }, [images.length]);
+
+  function handlePreviousSlideButtonClick() {
+    setCurrentSlide((currentValue) => {
+      if (currentValue === 0) return images.length - 1;
+      return currentValue - 1;
+    });
+  }
 
   function renderImages() {
     return images.map((image, index) => {
@@ -34,19 +51,25 @@ const Slider: React.FC<IProps> = ({ images, floatingDots }) => {
   }
 
   useEffect(() => {
-    setInterval(() => {
-      setCurrentSlide((currentValue) => {
-        if (currentValue >= images.length - 1) return 0;
-        return currentValue + 1;
-      });
-    }, 5000);
-  }, [images.length]);
+    setInterval(handleNextSlideButtonClick, 5000);
+  }, [handleNextSlideButtonClick]);
 
   return (
     <>
       <div className="slider">
+        <div className="buttons">
+          <button onClick={handlePreviousSlideButtonClick}>
+            <img src={SliderEsquerda} />
+          </button>
+          <button onClick={handleNextSlideButtonClick}>
+            <img src={SliderDireita} />
+          </button>
+        </div>
         {floatingDots && <div className="dots float">{renderDots()}</div>}
-        <h2><b>Inovação</b> e <b>tecnologia</b> para você, agricultor!</h2>
+
+        <h2>
+          <b>Inovação</b> e <b>tecnologia</b> para você, agricultor!
+        </h2>
         <div className="slides">{renderImages()}</div>
       </div>
       {!floatingDots && <div className="dots">{renderDots()}</div>}

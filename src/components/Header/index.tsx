@@ -1,5 +1,7 @@
+import {useEffect, useState} from "react";
 import "./Header.css";
 
+import AgrocafeLogo from "../../assets/logos/agrocafe.png";
 import NetafimLogo from "../../assets/logos/netafim.png";
 import SyngentaLogo from "../../assets/logos/syngenta.png";
 
@@ -14,9 +16,12 @@ interface IOptions {
 
 export interface IPropsSections {
   options: IOptions[];
+  discriminator: string;
+  scrolled?: boolean;
 }
 
 const Header = () => {
+  const [mobileLogoSmaller, setMobileLogoSmaller] = useState(false);
   const options: IOptions[] = [
     {
       label: "Sobre Nós",
@@ -44,15 +49,33 @@ const Header = () => {
     },
   ];
 
+  useEffect(() => {
+    document.addEventListener("scroll", () => {
+      const {scrollY} = window;
+
+      if(scrollY > 30 && !mobileLogoSmaller) {
+        return setMobileLogoSmaller(true);
+      }
+      setMobileLogoSmaller(false);
+    });
+  }, []);
+
   return (
     <>
       <header>
         <div className="super-header">
-          <img src={NetafimLogo} className="netafim-logo" />
-          <img src={SyngentaLogo} className="syngenta-logo" />
+          <img
+            style={{ width: "13vh" }}
+            src={NetafimLogo}
+            className="netafim logo"
+          />
+          <img src={SyngentaLogo} className="syngenta logo" />
         </div>
-        <DefaultSection options={options} />
-        <MobileSection options={options} />
+        <div className={`header-mobile-logo ${mobileLogoSmaller && "smaller"}`}>
+          <img src={AgrocafeLogo} alt="logo agrocafe" />
+        </div>
+        <DefaultSection options={options} discriminator={"default"} />
+        <MobileSection options={options} discriminator={"mobile"} scrolled={mobileLogoSmaller} />
       </header>
     </>
   );

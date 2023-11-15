@@ -26,10 +26,16 @@ div.modal-window img {
 }
 
 div.modal-window svg {
+    display: none;
+
     position: absolute;
     top: 0;
     right: 0;
     margin: 5vh;
 
     cursor: pointer;
+}
+
+div.modal-window.active > svg {
+    display: block;
 }

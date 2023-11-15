@@ -22,7 +22,7 @@ const Services: React.FC<IProps> = ({toggleModal}) => {
 
     function renderServices(): React.ReactNode {
       return services.map((service) => {
-        return <Service image={service} toggleModal={toggleModal} />
+        return <Service key={service} image={service} toggleModal={toggleModal} />
       })
     }
   return (

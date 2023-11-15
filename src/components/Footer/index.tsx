@@ -18,7 +18,7 @@ import ContactBox from "../ContactBox/index";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer id="contato">
       <div id="containerImg">
         <img
           id="imgLogo"

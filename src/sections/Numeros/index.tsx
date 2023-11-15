@@ -8,7 +8,7 @@ import IrrigarIcon from "../../assets/icons/irrigacao.png";
 
 const Numeros = () => {
   return (
-    <section className="numeros-section">
+    <section className="numeros-section" id="numeros">
       <div className="content">
         <div className="info">
           <img src={LightIcon} />

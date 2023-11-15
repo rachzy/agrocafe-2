@@ -11,12 +11,12 @@ const Hamburguer: React.FC<IProps> = ({ id, onClick }) => {
   const btn = useRef() as MutableRefObject<HTMLButtonElement>;
 
   function handleButtonClick() {
+    if (!onClick) return;
+    onClick();
+    
     if (!btn || !btn.current) return;
 
     btn.current.classList.toggle("is-active");
-
-    if (!onClick) return;
-    onClick();
   }
 
   return (

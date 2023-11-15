@@ -3,7 +3,7 @@ import { IPropsSections } from "..";
 import Gota from "../../../assets/other/gotinha-menu.png";
 import Logo from "../../../assets/logos/agrocafe.png";
 
-const DefaultSection: React.FC<IPropsSections> = ({ options }) => {
+const DefaultSection: React.FC<IPropsSections> = ({ options, discriminator }) => {
   function handleLogoClick() {
     window.scrollTo(0, 0);
   }
@@ -11,14 +11,12 @@ const DefaultSection: React.FC<IPropsSections> = ({ options }) => {
   function renderOptions() {
     return options.map((link) => {
       return (
-        <>
-          <li key={link.label}>
+          <li key={`${link.label} ${discriminator}`}>
             <a className="menu-option" href={link.href}>
               {link.label}
             </a>
             <img src={Gota} />
           </li>
-        </>
       );
     });
   }

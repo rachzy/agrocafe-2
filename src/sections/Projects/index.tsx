@@ -87,7 +87,7 @@ const Projects = () => {
     });
   }
   return (
-    <section className="projects-section">
+    <section className="projects-section" id="projetos">
       <div className="content">{renderProjects()}</div>
     </section>
   );

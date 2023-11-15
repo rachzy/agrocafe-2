@@ -130,6 +130,10 @@ div.block h2 {
         text-align: center;
         padding: 3vh;
     }
+
+    div.image-banner {
+        min-height: 50vh;
+    }
 }
 
 div.block.blue {

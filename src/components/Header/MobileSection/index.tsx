@@ -7,10 +7,18 @@ import Logo from "../../../assets/logos/agrocafe.png";
 
 import Hamburguer from "../../Hamburguer";
 
-const MobileSection: React.FC<IPropsSections> = ({ options }) => {
+const MobileSection: React.FC<IPropsSections> = ({ options, discriminator, scrolled }) => {
   const menuRef = useRef() as MutableRefObject<HTMLDivElement>;
 
   function handleHamburguerClick() {
+    const hamburguerMobile = document.querySelector(
+      "#hamburguer-menu-mobile"
+    ) as HTMLButtonElement;
+    hamburguerMobile.classList.toggle("is-active");
+    displayMenu();
+  }
+
+  function displayMenu() {
     menuRef.current.classList.toggle("active");
   }
 
@@ -25,13 +33,11 @@ const MobileSection: React.FC<IPropsSections> = ({ options }) => {
   function renderOptions() {
     return options.map((link) => {
       return (
-        <>
-          <li key={link.label} onClick={handleOptionClick}>
+          <li key={`${link.label} ${discriminator}`} onClick={handleOptionClick}>
             <a className="verde label" href={link.href}>
               {link.label}
             </a>
           </li>
-        </>
       );
     });
   }
@@ -45,10 +51,9 @@ const MobileSection: React.FC<IPropsSections> = ({ options }) => {
 
   return (
     <div className="mobile" onClick={handleMobileBarClick}>
-      <Hamburguer
-        id={"hamburguer-menu-mobile"}
-        onClick={handleHamburguerClick}
-      />
+      <div className={`hamburguer-box ${scrolled && "scrolled"}`} onClick={handleHamburguerClick}>
+        <Hamburguer id={"hamburguer-menu-mobile"} />
+      </div>
       <div className="mobile-background" ref={menuRef}>
         <div className="mobile-menu">
           <img src={Logo} onClick={handleOptionClick} alt="logo agrocafe" />

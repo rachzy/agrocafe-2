@@ -7,13 +7,12 @@ div.slider {
   align-items: center;
 
   width: 100vw;
-  margin-top: 11vh;
+  margin-top: 26vh;
 }
 
 @media screen and (min-width: 768px) {
   div.slider {
     height: 100vh;
-    margin-top: 0;
   }
 }
 
@@ -54,7 +53,9 @@ div.slider h2 {
   font-weight: 100;
   position: absolute;
   z-index: 99;
-  font-size: 7vmin;
+  font-size: 5.5vmin;
+
+  max-width: 70%;
   text-align: center;
 }
 
@@ -101,7 +102,7 @@ div.slider div.buttons {
   justify-content: space-between;
 
   position: absolute;
-  z-index: 999;
+  z-index: 99;
 }
 
 div.slider div.buttons button {
