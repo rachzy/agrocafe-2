@@ -35,3 +35,11 @@ section.aspas-section div.content p {
 
     margin-block: 5vh;
 }
+
+@media screen and (max-width: 768px) {
+    section.aspas-section {
+        padding-block: 10vh;
+        height: fit-content;
+    }
+    
+}

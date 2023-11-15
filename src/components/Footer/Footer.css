@@ -77,7 +77,7 @@ footer {
   width: 30vh;
 }
 
-#containerConteudo div.contact-block div, #containerConteudo div.contact-block a {
+#containerConteudo div.contact-block div {
   flex: 1;
 }
 
@@ -217,5 +217,5 @@ footer div.downline h3 {
 footer div.downline img {
   margin-left: 3vh;
   margin-top: 0.5vh;
-  width: 12vh;
+  width: 10vh;
 }

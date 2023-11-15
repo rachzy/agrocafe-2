@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import Title from '../../components/Title'
+import React, { useState } from "react";
+import Title from "../../components/Title";
 
 import "./Services.css";
 
@@ -13,56 +13,67 @@ import Service7 from "../../assets/photos/7.jpg";
 import Service8 from "../../assets/photos/8.jpg";
 import Service9 from "../../assets/photos/9.jpg";
 import Service10 from "../../assets/photos/10.jpg";
-import Service from '../../components/Service';
+import Service11 from "../../assets/photos/11.jpg";
+import Service12 from "../../assets/photos/12.jpg";
+import Service from "../../components/Service";
 
 interface IProps {
   toggleModal: (imageSource: string) => void;
 }
 
-const Services: React.FC<IProps> = ({toggleModal}) => {
-    const services = [Service1, Service2, Service3, Service4, Service5, Service6, Service7, Service8, Service9, Service10];
-    const [showMoreServices, setShowMoreServices] = useState(false);
+const Services: React.FC<IProps> = ({ toggleModal }) => {
+  const services = [
+    Service1,
+    Service2,
+    Service3,
+    Service4,
+    Service5,
+    Service6,
+    Service7,
+    Service8,
+    Service9,
+    Service10,
+    Service11,
+    Service12
+  ];
+  const [showMoreServices, setShowMoreServices] = useState(false);
 
-    function renderServices(): React.ReactNode {
-      return services.map((service, index) => {
-        if(index > 7 && !showMoreServices) return null;
-        return <Service key={service} image={service} toggleModal={toggleModal} />
-      })
-    }
+  function renderServices(): React.ReactNode {
+    return services.map((service, index) => {
+      if (index > 7 && !showMoreServices) return null;
+      return (
+        <Service key={service} image={service} toggleModal={toggleModal} />
+      );
+    });
+  }
 
-    function handleButtonClick() {
-      setShowMoreServices((currentValue) => !currentValue);
-    }
+  function handleButtonClick() {
+    setShowMoreServices((currentValue) => !currentValue);
+  }
 
-    function renderLabel(): React.ReactNode {
-      if(!showMoreServices) {
-        return (
-          <>
-          mais {" "}
-          <span>+
-          </span>
-          </>
-        )
-      }
+  function renderLabel(): React.ReactNode {
+    if (!showMoreServices) {
       return (
         <>
-        menos {" "}
-        <span>-
-        </span>
+          mais <span>+</span>
         </>
-      )
+      );
     }
+    return (
+      <>
+        menos <span>-</span>
+      </>
+    );
+  }
   return (
     <section className="services-section">
       <div className="content">
         <Title>Alguns dos nossos serviços e projetos</Title>
-        <div className="servicos-container">
-          {renderServices()}
-        </div>
+        <div className="servicos-container">{renderServices()}</div>
         <button onClick={handleButtonClick}>Ver {renderLabel()}</button>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;

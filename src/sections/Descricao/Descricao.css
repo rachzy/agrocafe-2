@@ -96,7 +96,7 @@ section.desc-section div.content-wrapper.justify p {
   section.desc-section div.main-content-wrapper {
     flex-direction: column;
     height: fit-content;
-    padding-block: 15vh 10vh;
+    padding-block: 5vh 0vh;
 
     width: 100vw;
 

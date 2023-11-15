@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import "./Header.css";
 
 import AgrocafeLogo from "../../assets/logos/agrocafe.png";
@@ -51,9 +51,9 @@ const Header = () => {
 
   useEffect(() => {
     document.addEventListener("scroll", () => {
-      const {scrollY} = window;
+      const { scrollY } = window;
 
-      if(scrollY > 30 && !mobileLogoSmaller) {
+      if (scrollY > 30 && !mobileLogoSmaller) {
         return setMobileLogoSmaller(true);
       }
       setMobileLogoSmaller(false);
@@ -64,18 +64,26 @@ const Header = () => {
     <>
       <header>
         <div className="super-header">
-          <img
-            style={{ width: "13vh" }}
-            src={NetafimLogo}
-            className="netafim logo"
-          />
-          <img src={SyngentaLogo} className="syngenta logo" />
+          <a href="http://netafim.com.br/" target="_blank">
+            <img
+              style={{ width: "13vh" }}
+              src={NetafimLogo}
+              className="netafim logo"
+            />
+          </a>
+          <a href="https://www.syngenta.com.br/" target="_blank">
+            <img src={SyngentaLogo} className="syngenta logo" />
+          </a>
         </div>
         <div className={`header-mobile-logo ${mobileLogoSmaller && "smaller"}`}>
           <img src={AgrocafeLogo} alt="logo agrocafe" />
         </div>
         <DefaultSection options={options} discriminator={"default"} />
-        <MobileSection options={options} discriminator={"mobile"} scrolled={mobileLogoSmaller} />
+        <MobileSection
+          options={options}
+          discriminator={"mobile"}
+          scrolled={mobileLogoSmaller}
+        />
       </header>
     </>
   );
