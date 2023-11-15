@@ -49,6 +49,10 @@ const Header = () => {
     },
   ];
 
+  function handleLogoClick() {
+    window.scrollTo(0, 0);
+  }
+
   useEffect(() => {
     document.addEventListener("scroll", () => {
       const { scrollY } = window;
@@ -76,7 +80,7 @@ const Header = () => {
           </a>
         </div>
         <div className={`header-mobile-logo ${mobileLogoSmaller && "smaller"}`}>
-          <img src={AgrocafeLogo} alt="logo agrocafe" />
+          <img onClick={handleLogoClick} src={AgrocafeLogo} alt="logo agrocafe" />
         </div>
         <DefaultSection options={options} discriminator={"default"} />
         <MobileSection

@@ -118,7 +118,9 @@ section.desc-section div.content-wrapper.justify p {
     justify-content: center;
     padding-left: 0;
     margin: auto;
-    margin-block: 4vh;
+    margin-top: 4vh;
+    padding-bottom: 4vh;
+    background-color: var(--cinza);
   }
 
   section.desc-section div.content-wrapper img {

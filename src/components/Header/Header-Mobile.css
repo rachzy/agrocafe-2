@@ -66,13 +66,14 @@ header .mobile-menu {
 }
 
 header .mobile-background.active .mobile-menu {
-  min-width: fit-content;
-  max-width: 70%;
+  width: 100%;
 }
 
 header .mobile-menu nav.options {
   width: 100%;
   margin-top: 7vh;
+
+  transition: 0.3s all;
 }
 
 header .mobile-menu nav.options ul.options-list {
@@ -80,6 +81,7 @@ header .mobile-menu nav.options ul.options-list {
   flex-direction: column;
 
   align-items: center;
+  width: 100%;
 }
 
 header .mobile-menu a {

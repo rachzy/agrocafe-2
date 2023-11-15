@@ -81,7 +81,7 @@ const Footer = () => {
             flex={2}
             href="https://maps.app.goo.gl/aezBFkzphmcqga8A9"
           >
-            Av. Olegário Maciel, 988 Bairro Batuque Monte Carmelo/MG 38500-000
+            Av. Olegário Maciel, 988, - Bairro Batuque Monte Carmelo/MG, 38500-000
           </ContactBox>
         </div>
       </div>

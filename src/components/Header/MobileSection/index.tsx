@@ -3,8 +3,6 @@ import { IPropsSections } from "..";
 
 import "../Header-Mobile.css";
 
-import Logo from "../../../assets/logos/agrocafe.png";
-
 import Hamburguer from "../../Hamburguer";
 
 const MobileSection: React.FC<IPropsSections> = ({ options, discriminator, scrolled }) => {
@@ -56,8 +54,7 @@ const MobileSection: React.FC<IPropsSections> = ({ options, discriminator, scrol
       </div>
       <div className="mobile-background" ref={menuRef}>
         <div className="mobile-menu">
-          <img src={Logo} onClick={handleOptionClick} alt="logo agrocafe" />
-          <nav className="options">
+          <nav className="options" style={scrolled ? {marginTop: "7vh"} : {marginTop: "20vh"}}>
             <ul className="options-list">{renderOptions()}</ul>
           </nav>
         </div>

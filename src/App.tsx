@@ -49,7 +49,7 @@ const App = () => {
       <Descricao />
       <Numeros />
       <Aspas quotesColor="Blue">
-        Em parceria com a Syngenta e a Netafim, atendemos o produtor em todos os
+        Em parceria com a Netafim e a Syngenta, atendemos o produtor em todos os
         segmentos da agricultura: consultorias, produtos, irrigação,
         assistências e pulverização, via drone.
       </Aspas>

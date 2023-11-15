@@ -52,7 +52,16 @@ div.project p.description-text {
 
 div.project.active > h1 img {
     transform: rotate(90deg);
-    margin-left: 3vh;
+    margin-left: 1vh;
+}
+
+@media screen and (max-width: 768px) {
+    div.project.active > h1 img {
+        margin-left: 3vh;
+    }
+    div.project.active > h1 {
+        margin-left: -1vh;
+    }
 }
 
 div.project.active > p.preview-text {
