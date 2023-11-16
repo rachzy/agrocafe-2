@@ -71,7 +71,7 @@ header .mobile-background.active .mobile-menu {
 
 header .mobile-menu nav.options {
   width: 100%;
-  margin-top: 7vh;
+  margin-top: 20vh;
 
   transition: 0.3s all;
 }
@@ -121,6 +121,12 @@ header .mobile-menu nav.options li {
   border-radius: 1vh;
 
   margin-block: 1vh;
+  transition: 0.2s all;
+}
+
+header .mobile-menu nav.options li:hover {
+  background: var(--azulmain);
+  color: white;
 }
 
 header .mobile-menu nav.options img {
@@ -170,7 +176,8 @@ header .mobile-menu nav.options li:hover > ul.sub-options {
   /* SUPER HEADER */
 
   header div.super-header {
-    position: absolute;
+    position: fixed;
+    top: 0;
     z-index: 1000;
     height: 4vh;
     justify-content: center;

@@ -5,7 +5,7 @@ import "../Header-Mobile.css";
 
 import Hamburguer from "../../Hamburguer";
 
-const MobileSection: React.FC<IPropsSections> = ({ options, discriminator, scrolled }) => {
+const MobileSection: React.FC<IPropsSections> = ({ options, discriminator }) => {
   const menuRef = useRef() as MutableRefObject<HTMLDivElement>;
 
   function handleHamburguerClick() {
@@ -49,12 +49,12 @@ const MobileSection: React.FC<IPropsSections> = ({ options, discriminator, scrol
 
   return (
     <div className="mobile" onClick={handleMobileBarClick}>
-      <div className={`hamburguer-box ${scrolled && "scrolled"}`} onClick={handleHamburguerClick}>
+      <div className={`hamburguer-box`} onClick={handleHamburguerClick}>
         <Hamburguer id={"hamburguer-menu-mobile"} />
       </div>
       <div className="mobile-background" ref={menuRef}>
         <div className="mobile-menu">
-          <nav className="options" style={scrolled ? {marginTop: "7vh"} : {marginTop: "20vh"}}>
+          <nav className="options">
             <ul className="options-list">{renderOptions()}</ul>
           </nav>
         </div>

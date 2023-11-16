@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "./Header.css";
 
 import AgrocafeLogo from "../../assets/logos/agrocafe.png";
@@ -17,11 +16,9 @@ interface IOptions {
 export interface IPropsSections {
   options: IOptions[];
   discriminator: string;
-  scrolled?: boolean;
 }
 
 const Header = () => {
-  const [mobileLogoSmaller, setMobileLogoSmaller] = useState(false);
   const options: IOptions[] = [
     {
       label: "Sobre Nós",
@@ -53,17 +50,6 @@ const Header = () => {
     window.scrollTo(0, 0);
   }
 
-  useEffect(() => {
-    document.addEventListener("scroll", () => {
-      const { scrollY } = window;
-
-      if (scrollY > 30 && !mobileLogoSmaller) {
-        return setMobileLogoSmaller(true);
-      }
-      setMobileLogoSmaller(false);
-    });
-  }, []);
-
   return (
     <>
       <header>
@@ -79,14 +65,13 @@ const Header = () => {
             <img src={SyngentaLogo} className="syngenta logo" />
           </a>
         </div>
-        <div className={`header-mobile-logo ${mobileLogoSmaller && "smaller"}`}>
+        <div className={`header-mobile-logo`}>
           <img onClick={handleLogoClick} src={AgrocafeLogo} alt="logo agrocafe" />
         </div>
         <DefaultSection options={options} discriminator={"default"} />
         <MobileSection
           options={options}
           discriminator={"mobile"}
-          scrolled={mobileLogoSmaller}
         />
       </header>
     </>

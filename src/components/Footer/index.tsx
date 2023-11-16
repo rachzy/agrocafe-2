@@ -61,10 +61,7 @@ const Footer = () => {
           <ContactBox icone={WhatsappIcon} href="https://wa.me/5534999084113">
             34 99908-4113
           </ContactBox>
-          <ContactBox
-            icone={EmailIcon}
-            href="mailto:irrigacao@agrocafe.com"
-          >
+          <ContactBox icone={EmailIcon} href="mailto:irrigacao@agrocafe.com">
             irrigacao@agrocafe.com
           </ContactBox>
         </div>
@@ -81,7 +78,8 @@ const Footer = () => {
             flex={2}
             href="https://maps.app.goo.gl/aezBFkzphmcqga8A9"
           >
-            Av. Olegário Maciel, 988, - Bairro Batuque Monte Carmelo/MG, 38500-000
+            Av. Olegário Maciel, 988 • Bairro Batuque • Monte Carmelo/MG •
+            38500-000
           </ContactBox>
         </div>
       </div>

@@ -36,7 +36,7 @@ div.contact-box p {
 
     max-width: 90vw;
 
-    text-align: justify;
+    text-align: left;
     text-overflow: ellipsis;
     padding-right: 5vh;
     overflow: hidden;
